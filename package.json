@@ -1,6 +1,6 @@
 {
   "name": "vmod",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Virtual module for node.js",
   "main": "vmod.js",
   "scripts": {
