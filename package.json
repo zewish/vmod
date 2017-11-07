@@ -1,0 +1,39 @@
+{
+  "name": "vmod",
+  "version": "1.0.0",
+  "description": "Virtual module for node.js",
+  "main": "vmod.js",
+  "scripts": {
+    "release": "buble --objectAssign='Object.assign' ./src/vmod.js -o ./vmod.js && buble ./src/vmod.test.js -o ./vmod.test.js && buble ./src/_test-file.js -o ./_test-file.js && mocha ./*.test.js",
+    "test": "mocha ./src/*.test.js"
+  },
+  "author": "Iskren Slavov <iskren.s@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "oget": "^1.0.9",
+    "require-like": "^0.1.2",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "buble": "^0.17.0",
+    "chai": "^4.1.2",
+    "chalk": "^2.3.0",
+    "mocha": "^4.0.1"
+  },
+  "keywords": [
+    "virtual",
+    "module",
+    "vmod",
+    "require-like",
+    "sandbox",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zewish/vmod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zewish/vmod/issues"
+  },
+  "homepage": "https://github.com/zewish/vmod"
+}
