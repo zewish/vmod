@@ -7,6 +7,8 @@ var shortid = require('shortid').generate;
 var dirname = require('path').dirname;
 
 module.exports = function (code, _sandbox) {
+    if ( _sandbox === void 0 ) _sandbox = {};
+
     var filename = oget(
         module,
         'parent.filename',

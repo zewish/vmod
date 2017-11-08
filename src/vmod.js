@@ -6,7 +6,7 @@ const requireLike = require('require-like');
 const shortid = require('shortid').generate;
 const dirname = require('path').dirname;
 
-module.exports = (code, _sandbox) => {
+module.exports = (code, _sandbox = {}) => {
     const filename = oget(
         module,
         'parent.filename',
