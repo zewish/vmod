@@ -6,7 +6,7 @@ Virtual module for node.js - vmod
 
 - Runs in different script context than your current script;
 - Executes a string of code in require-like environment;
-- Allows passing custom sandbox environment;
+- Allows you to override globals of the sandbox environment;
 - Returns `module.exports` output;
 - Throws errors that can be caught in your current context;
 
