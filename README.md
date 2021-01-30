@@ -49,7 +49,6 @@ Require External file
 module.exports = "test file data";
 */
 
-'use strict';
 const vmod = require('vmod');
 
 console.log(
@@ -62,7 +61,6 @@ console.log(
 Override sandbox variable
 -------------------------
 ```js
-'use strict';
 const vmod = require('vmod');
 
 vmod(
