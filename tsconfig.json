@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  },
+  "include": ["src"]
+}
