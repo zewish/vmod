@@ -1,5 +1,4 @@
 [![NPM version](https://img.shields.io/npm/v/vmod.svg?style=flat-square)](https://www.npmjs.com/package/vmod)
-[![Build Status](https://travis-ci.org/zewish/vmod.svg?branch=master)](https://travis-ci.org/zewish/vmod)
 [![Downloads](https://img.shields.io/npm/dm/vmod.svg?style=flat-square)](https://www.npmjs.com/package/vmod)
 
 Virtual module for node.js - vmod
@@ -23,24 +22,22 @@ $ npm install vmod --save
 Simple
 ------
 ```js
-'use strict';
 const vmod = require('vmod');
 
 console.log(
-    vmod('module.exports = 123;')
+  vmod('module.exports = 123;')
 ); // 123
 ```
 
 Export function
 ---------------
 ```js
-'use strict';
 const vmod = require('vmod');
 
 console.log(
-    vmod(
-        'module.exports = () => "yay!";'
-    )()
+  vmod(
+    'module.exports = () => "yay!";'
+  )()
 ); // "yay!"
 ```
 
@@ -56,9 +53,9 @@ module.exports = "test file data";
 const vmod = require('vmod');
 
 console.log(
-    vmod(
-        'module.exports = require("./_test-file.js")'
-    )()
+  vmod(
+    'module.exports = require("./_test-file.js")'
+  )()
 ); // "test file data"
 ```
 
@@ -69,7 +66,7 @@ Override sandbox variable
 const vmod = require('vmod');
 
 vmod(
-    'module.exports = require("./_test-file.js")',
-    { require: null }
+  'module.exports = require("./_test-file.js")',
+  { require: null }
 ); // TypeError: require is not a function
 ```
