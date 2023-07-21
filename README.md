@@ -12,6 +12,7 @@ Virtual module for node.js - vmod
 Known limitations:
 - console.log, console.warn, console.error, etc. output not visible;
 - Modifications to prototypes of some globals not visible in the vmod context;
+- Only CommonJS modules supported;
 
 Installation
 ------------
