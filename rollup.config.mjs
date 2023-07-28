@@ -7,7 +7,7 @@ export default {
     file: './vmod.js',
     format: 'cjs',
     exports: 'default',
-    interop: 'esModule',
+    interop: 'compat',
     strict: false
   },
   external: [
